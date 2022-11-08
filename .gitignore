@@ -1,3 +1,4 @@
 scylladb/*/
 postgresql/*/
 kafka/*/
+scylladb-single/*/
