@@ -1,0 +1,3 @@
+ docker exec marketplace-analytics-scylla-1 nodetool status
+
+ 192.168.1.208

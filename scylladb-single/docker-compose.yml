@@ -1,0 +1,19 @@
+version: "3.4"
+services:
+  scylla-ml-proxy:
+    image: scylladb/scylla
+    container_name: scylla-ml-proxy-1
+    environment:
+      - TZ=America/Sao_Paulo
+    networks:
+      - scylla-network
+    ports:
+      - 9042:9042
+    volumes:
+      - ./scylla-data/node-01:/var/lib/scylla
+      - ./scylla.yaml:/etc/scylla/scylla.yaml
+
+
+networks:
+  scylla-network:
+    driver: bridge
