@@ -1,4 +1,4 @@
-scylladb/*/
+scylladb-cluster/*/
 postgresql/*/
 kafka/*/
 scylladb-single/*/
